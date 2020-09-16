@@ -1,12 +1,14 @@
-console.warn( "THREE.Water: As part of the transition to ES6 Modules, the files in 'examples/js' were deprecated in May 2020 (r117) and will be deleted in December 2020 (r124). You can find more information about developing using ES6 Modules in https://threejs.org/docs/#manual/en/introduction/Installation." );
 /**
- * Work based on :
- * http://slayvin.net : Flat mirror for three.js
- * http://www.adelphi.edu/~stemkoski : An implementation of water shader based on the flat mirror
- * http://29a.ch/ && http://29a.ch/slides/2012/webglwater/ : Water shader explanations in WebGL
- */
+ * Generated from 'examples\modules\objects\Water.js'
+ **/
 
-THREE.Water = function ( geometry, options ) {
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('../../../build/three.module.js')) :
+	typeof define === 'function' && define.amd ? define(['exports', '../../../build/three.module.js'], factory) :
+	(factory((global.THREE = global.THREE || {}),global.THREE));
+}(this, (function (exports,THREE) { 'use strict';
+
+exports.Water = function ( geometry, options ) {
 
 	THREE.Mesh.call( this, geometry );
 
@@ -340,5 +342,9 @@ THREE.Water = function ( geometry, options ) {
 
 };
 
-THREE.Water.prototype = Object.create( THREE.Mesh.prototype );
-THREE.Water.prototype.constructor = THREE.Water;
+exports.Water.prototype = Object.create( THREE.Mesh.prototype );
+exports.Water.prototype.constructor = exports.Water;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
